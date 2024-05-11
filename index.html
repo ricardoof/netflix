@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clone Netflix</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="src/reset.css">
+    <link rel="stylesheet" href="src/style.css">
+    <link rel="stylesheet" href="src/responsive.css">
+</head>
+
+<body>
+    <div class="background">
+        <header>
+            <nav class="header__navigation">
+                <!-- Desktop -->
+                <div class="header__navigation-desktop">
+                    <img class="header__navigation-logo" src="./img/logo.png" alt="Logo da Netflix">
+                    <ul class="header__navigation-menu">
+                        <li>
+                            <a href="#">Início</a>
+                        </li>
+                        <li>
+                            <a href="#">Séries</a>
+                        </li>
+                        <li>
+                            <a href="#">Filmes</a>
+                        </li>
+                        <li>
+                            <a href="#">Bombando</a>
+                        </li>
+                        <li>
+                            <a href="#">Minha lista</a>
+                        </li>
+                    </ul>
+                    <ul class="header__navigation-menu-right">
+                        <li>
+                            <i class="fas fa-search"></i>
+                        </li>
+                        <li>
+                            <i class="fas fa-bell"></i>
+                        </li>
+                        <li class="header__navigation-menu-right-user">
+                            <img src="./img/user.png" alt="Ícone do usuário">
+                            <i class="fas fa-caret-down"></i>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Mobile -->
+                <div class="header__navigation-mobile">
+                    <div class="header__navigation-mobile-top">
+                        <img src="./img/logo_single.png" alt="Logo da Netflix">
+                        <i class="fas fa-rss "></i>
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <div class="header__navigation-mobile-bottom">
+                        <ul>
+                            <li>
+                                <a href="#">Séries</a>
+                            </li>
+                            <li>
+                                <a href="#">Filmes</a>
+                            </li>
+                            <li>
+                                <a href="#">Categorias</a>
+                                <i class="fas fa-caret-down"></i>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <!-- Banner -->
+            <div class="banner">
+                <div>
+                    <img src="./img/poster.png" alt="Poster do filme Spiderhead">
+                    <p class="banner__title">Stranger Things</p>
+                </div>
+                <span class="banner__description">Em uma penitenciária de última geração, um detento participa de um
+                    experimento com drogas que controlam as emoções para um gênio da industria farmacêutica
+                </span>
+                <div class="banner__button">
+                    <button class="button__addlist">
+                        <i class="fas fa-plus"></i>
+                        <p>Minha lista</p>
+                    </button>
+                    <button class="button__watch">
+                        <i class="fas fa-play"></i>
+                        <p>Assistir</p>
+                    </button>
+                    <button class="button__information">
+                        <i class="fas fa-info-circle"></i>
+                        <p>Mais informações</p>
+                    </button>
+                    <button class="button__information-mobile">
+                        <i class="fas fa-info-circle"></i>
+                        <p>Saiba mais</p>
+                    </button>
+                </div>
+            </div>
+
+            <!-- List -->
+            <div class="list">
+                <p class="list-title">Minha lista</p>
+                <div class="list-series scroll">
+                    <img src="./img/poster_01.png" alt="Bojack Horseman">
+                    <img src="./img/poster_02.png" alt="Ozark">
+                    <img src="./img/poster_03.png" alt="A vizinha da mulher na janela">
+                    <img src="./img/poster_04.png" alt="Breaking bad">
+                    <img src="./img/poster_05.png" alt="The ending of the fucking world">
+                    <img src="./img/poster_06.png" alt="Boneca russa">
+                    <img src="./img/poster_07.png" alt="Pray away">
+                </div>
+            </div>
+            <div class="list">
+                <p class="list-title">Em alta</p>
+                <div class="list-series scroll">
+                    <img src="./img/poster_08.png" alt="Stranger things">
+                    <img src="./img/poster_09.png" alt="The umbrella academy">
+                    <img src="./img/poster_10.png" alt="Peaky blinders">
+                    <img src="./img/poster_11.png" alt="Arremessando alto">
+                    <img src="./img/poster_12.png" alt="Amor e gelato">
+                    <img src="./img/poster_13.png" alt="La casa de papel coreia">
+                    <img src="./img/poster_14.png" alt="Polar">
+                </div>
+            </div>
+            <div class="list">
+                <p class="list-title">Animes</p>
+                <div class="list-series scroll">
+                    <img src="./img/poster_20.png" alt="One piece">
+                    <img src="./img/poster_21.png" alt="My hero academia">
+                    <img src="./img/poster_22.png" alt="Demon slayer">
+                    <img src="./img/poster_23.png" alt="Spy x family">
+                    <img src="./img/poster_24.png" alt="Haikyu">
+                    <img src="./img/poster_25.png" alt="Mob psycho 100">
+                </div>
+            </div>
+            <div class="list">
+                <p class="list-title">Séries estrangeiras</p>
+                <div class="list-series scroll">
+                    <img src="./img/poster_15.png" alt="Queen loretta">
+                    <img src="./img/poster_16.png" alt="As 7 vidas de lea">
+                    <img src="./img/poster_17.png" alt="Young royals">
+                    <img src="./img/poster_18.png" alt="Dark">
+                    <img src="./img/poster_19.png" alt="Bem-vindos ao éden">
+                </div>
+            </div>
+        </main>
+        <!-- Footer -->
+        <footer>
+            <!-- Desktop -->
+            <ul class="footer__desktop">
+                <li>
+                    <div class="social">
+                        <a href="#">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                    </div>
+                </li>
+                <li class="links">
+                    <div>
+                        <a href="#">Idiomas e legendas</a>
+                        <a href="#">Imprensa</a>
+                        <a href="#">Privacidade</a>
+                        <a href="#">Entre em contato</a>
+                    </div>
+                    <div>
+                        <a href="#">Audiodescrição</a>
+                        <a href="#">Relações com investidores</a>
+                        <a href="#">Avisos legais</a>
+                    </div>
+                    <div>
+                        <a href="#">Centro de ajuda</a>
+                        <a href="#">Carreiras</a>
+                        <a href="#">Preferências de cookies</a>
+                    </div>
+                    <div>
+                        <a href="#">Cartões pré-pagos</a>
+                        <a href="#">Termos de uso</a>
+                        <a href="#">Informações corporativas</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">Código de serviço</a>
+                </li>
+                <li>
+                    <p>© 1997-2021 Netflix, Inc. </p>
+                </li>
+            </ul>
+            <!-- Mobile -->
+            <ul class="footer__mobile">
+                <li>
+                    <a href="#">
+                        <i class="fas fa-house"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-gamepad"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-search"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./img/user.png" alt="Ícone do usuário">
+                    </a>
+                </li>
+            </ul>
+        </footer>
+    </div>
+</body>
+
+</html>
